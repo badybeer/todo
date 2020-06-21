@@ -19,7 +19,6 @@ export function Item({ todo, onUpdate, onRemove }) {
   } else {
     elapsed = Math.round(todo.finishedTime - todo.createdTime) / 1000;
   }
-
   var timestr = 'Elapsed time: ' + Math.round(elapsed) + ' seconds';
   if (elapsed > 60) {
     elapsed = 'Elapsed time: ' + Math.round(elapsed / 60);
