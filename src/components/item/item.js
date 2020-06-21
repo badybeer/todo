@@ -57,7 +57,7 @@ export function Item({ todo, onUpdate, onRemove }) {
     backgroundColor: '#b83f45'
   };
 
-  const Timer = {
+  const timer = {
     marginLeft: '60px',
     fontSize: '12px'
   };
@@ -72,7 +72,7 @@ export function Item({ todo, onUpdate, onRemove }) {
             edit
           </button>
           <button className="destroy" onClick={handleRemove} data-testid="todo-remove" />
-          <div style={Timer}>{timestr}</div>
+          <div style={timer}>{timestr}</div>
         </div>
         {editing && (
           <input className="edit" value={name} onInput={handleChange} onBlur={handleBlur} onChange={() => {}} />
